@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "name": "test-2",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

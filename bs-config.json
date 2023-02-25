@@ -1,0 +1,9 @@
+{
+    "server": {
+        "baseDir": [
+            "./client",
+            "./build/contracts"
+        ]
+    },
+    "port": 3000
+}
