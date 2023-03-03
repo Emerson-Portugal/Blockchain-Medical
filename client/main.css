@@ -1,0 +1,256 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --primario: #784D3C;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: #151522;
+    color: #ffffff;
+    /*1rem* = 10px*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+
+
+/*Carga*/
+.preloader {
+    display: flex;
+    flex-direction: column;
+    /*opcional*/
+    align-items: center;
+    /*opcional*/
+    justify-content: center;
+    min-height: 100vh;
+    cursor: point
+}
+
+
+/*spinner*/
+
+.spinner {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+}
+
+.spinner .dot {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.spinner .dot::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner .dot {
+    animation: spin 2s infinite;
+}
+
+.spinner .dot:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+.spinner .dot:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+.spinner .dot:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+.spinner .dot:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+/*clase boton*/
+.btn {
+    z-index: 2;
+    position: absolute;
+}
+
+/*Titulo*/
+.title {
+    font-size: 6rem;
+    color: #a569e0;
+}
+
+/*Form*/
+.styleForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form {
+    /* Centrar el formulario en la página */
+
+    width: 45rem;
+    height: 36rem;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2b2b3a;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+form li+li {
+    margin-top: 1em;
+
+}
+
+li {
+    width: 300px;
+}
+
+
+
+label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 20rem;
+    font-size: 2.5rem;
+
+}
+
+input,
+textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+    height: 3rem;
+    font-size: 1.8rem;
+}
+
+input:focus,
+textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+}
+
+textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+
+    /* Proporcionar espacio para escribir texto */
+    height: 10rem;
+
+}
+
+
+.button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 90px;
+    /* mismo tamaño que los elementos de la etiqueta */
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    width: 300px;
+    font-size: 2rem;
+}
+
+/*Lista de Pacientes*/
+
+.primary_value {
+    border: 0.2rem dashed #ffffff;
+    margin: 3rem 0;
+    padding: 2rem 6rem;
+    background: #2b2b3a;
+    font-weight: bold
+}
+
+.valor_span {
+    margin: 1rem 0;
+}
+
+.title_span {
+    font-size: 2.3rem;
+    padding: auto;
+}
+
+span {
+    font-size: 1.8rem;
+}
